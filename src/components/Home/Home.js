@@ -15,7 +15,7 @@ const [friends, setFriends] = useState([]);
            <h1>Friends : {friends.length}</h1>
 
             {
-            friends.map(fnd=><Friends friend={fnd}></Friends>)
+            friends.map(fnd=><Friends friend={fnd} key={fnd.id}></Friends>)
             } 
         </div>
     );
